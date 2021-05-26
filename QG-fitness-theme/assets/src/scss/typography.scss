@@ -1,0 +1,104 @@
+// --------------------
+// Include Fonts Here
+// --------------------
+// @font-face {
+//     font-family: 'Averta-Regular';
+//     src: url('../fonts/Averta-Regular.woff2') format('woff2'),
+//     url('../fonts/Averta-Regular.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+$header-font: 'Montserrat', sans-serif;
+$body-font: 'Montserrat', sans-serif;
+
+// --------------------
+//  Include Basic Typography
+// --------------------
+
+:root,
+html,
+body {
+    font-size: 15px;
+    @include media-breakpoint-up(md) {
+        font-size: 17px;
+    }
+    @include media-breakpoint-up(lg) {
+        font-size: 19px;
+    }
+}
+html, body {
+    margin: 0;
+    overflow-x: hidden;
+    font-weight: 400;
+    color: #4a4a4a;
+    &.scroll-lock {
+        max-height: 100%;
+        overflow-y: hidden;
+    }
+    * {
+        margin-top: 0;
+        line-height: 1.5;
+        box-sizing: border-box;
+        font-family: $body-font;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-family: $header-font;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: $secondary;
+}
+
+h1, .h1,
+h2, .h2 {
+    text-transform: uppercase;
+}
+h1, .h1 {
+    font-size: 2rem;
+    @include media-breakpoint-up(md) {
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+    }
+}
+h2, .h2 {
+    font-size: 1.8rem;
+    @include media-breakpoint-up(md) {
+        font-size: 2.05rem;
+    }
+}
+h3, .h3 {
+    font-size: 1.5rem;
+}
+h4, .h4 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+h5, .h5 {
+    font-size: .9rem;
+}
+
+// Hero Specific Font Sizes
+.eyebrow {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.subheadline {
+    font-size: 1.2rem;
+}
+
+blockquote {
+    font-size: 5rem;
+    line-height: .8;
+}

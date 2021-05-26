@@ -1,0 +1,30 @@
+// --------------------
+// VARIABLES
+//---------------------
+
+// Colors
+$primary        : #fdab9e;
+$primary-2      : #da5920;
+$secondary      : #4a4a4a;
+$headings       : #333;
+$light          : #ffeeed;
+$gray           : #ebecee;
+
+// --------------------
+// Container Options
+//---------------------
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  ) !default;
+  
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1140px,
+) !default;
